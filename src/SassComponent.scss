@@ -1,7 +1,9 @@
-@import "./styles/utils";
-
 .SassComponent {
   display: flex;
+  background: $oc-gray-2;
+  @include media("<768px") {
+    background: $oc-gray-9;
+  }
   .box {
     background: red;
     cursor: pointer;
@@ -36,7 +38,7 @@
       @include square(7);
     }
     &:hover {
-      //.box에 마우스롤 올렸을 때
+      //.box에 마우스롤 올렸을 때(hover)
       background: black;
     }
   }
